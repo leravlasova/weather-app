@@ -22,6 +22,8 @@ li {
   height: 19px;
   line-height: 1;
   list-style: none;
+  text-transform: capitalize;
+  margin-top: 5px;
 }
 
 .clearfix {
@@ -124,4 +126,14 @@ li {
   text-decoration: none;
   color: skyblue;
   margin: 0 50px;
+}
+
+.cities a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.cities a:hover {
+  text-decoration: underline;
 }

@@ -37,11 +37,11 @@
               />
 
               <div class="cities">
-                <p>Oslo</p>
-                <p>Lissabon</p>
-                <p>Kyiv</p>
-                <p>Dublin</p>
-                <p>Amsterdam</p>
+                <a class="oslo">Oslo</a>
+                <a class="lissabon">Lissabon</a>
+                <a class="kyiv">Kyiv</a>
+                <a class="dublin">Dublin</a>
+                <a class="amsterdam">Amsterdam</a>
               </div>
             </div>
             
@@ -76,24 +76,22 @@
     <div class="container">
       <div class="weather-app">
         <h1 id="city" >
-          Dublin, Ierland
+          
         </h1>
         <ul>
           <li id="date" class="date"></li>
-          <li>
-            Partly Cloudy
-          </li>
           <li id="description"></li>
         </ul>
         <div class="row">
           <div class="col-6">
             <div class="d-flex weather-temperature">
               <img
-                src="./img/mcloudy.svg"
+                
                 alt="Cloudy icon"
                 class="weather-icon float-left"
+                id="icon"
               />
-              <div class="float-left">
+              <div >
                 <span class="temperature" id="temperature">19</span>
                 <span class="units">
                   <a href="#" id="celsius-link">°C</a> |
@@ -104,14 +102,12 @@
           </div>
           <div class="col-6">
             <ul>
-              <li>
-                Precipitation: 0%
-              </li>
+              
               <li id="humidity">
-                Humidity: 77%
+                
               </li>
               <li id="wind">
-                Wind: 8 km/h
+                
               </li>
             </ul>
           </div>
