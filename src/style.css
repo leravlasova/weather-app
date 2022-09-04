@@ -128,12 +128,12 @@ li {
   margin: 0 50px;
 }
 
+.cities a:hover {
+  text-decoration: underline;
+}
+
 .cities a {
   cursor: pointer;
   text-decoration: none;
   color: black;
-}
-
-.cities a:hover {
-  text-decoration: underline;
 }

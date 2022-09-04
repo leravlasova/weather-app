@@ -71,18 +71,6 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 66;
-}
-
-function convertToCelsius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 19;
-}
-
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
@@ -116,4 +104,38 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
-searchCity("Kyiv");
+
+function osloWeather() {
+  searchCity("Oslo");
+}
+function LisWeather() {
+  searchCity("Lissabon");
+}
+function KyivWeather() {
+  searchCity("Kyiv");
+}
+
+function DubWeather() {
+  searchCity("Dublin");
+}
+
+function AmstWeather() {
+  searchCity("Amsterdam");
+}
+
+let oslo = document.querySelector("#oslo");
+oslo.addEventListener("click", osloWeather);
+
+let lis = document.querySelector("#lissabon");
+lis.addEventListener("click", LisWeather);
+
+let kyiv = document.querySelector("#kyiv");
+kyiv.addEventListener("click", KyivWeather);
+
+let dublin = document.querySelector("#dublin");
+dublin.addEventListener("click", DubWeather);
+
+let amst = document.querySelector("#amsterdam");
+amst.addEventListener("click", AmstWeather);
+
+searchCity("Prague");
