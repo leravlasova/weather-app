@@ -128,12 +128,16 @@ li {
   margin: 0 50px;
 }
 
-.cities a:hover {
-  text-decoration: underline;
-}
-
 .cities a {
   cursor: pointer;
   text-decoration: none;
   color: black;
+}
+
+.oslo:hover,
+.dublin:hover,
+.kyiv:hover,
+.amsterdam:hover,
+.lis:hover {
+  text-decoration: underline;
 }
